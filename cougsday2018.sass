@@ -1,0 +1,538 @@
+/* Giving Cougsday 2018 Styles */
+
+
+$blue0: #000a2e
+$blue1: #001948
+$blue2: #025
+$blue3: #036
+$blue4: #147
+$blue5: #258
+$blue6: #369
+$blue7: #4a79a7
+$blue8: #628cb6
+$blue9: #7a9fc4
+$blue10: #91b2d2
+$blue11: #abc8e4
+$blue12: #d1e4f6
+$blue13: #e0edf9
+$blue14: #eff6fc
+
+$size1: 42em
+$size2: 54em
+$size3: 64em
+
+$duration: 250ms
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600')
+
+html, body
+	margin: 0
+	padding: 0
+	text-align: center
+	font: 300 1em/1.4 'Open Sans', Helvetica, Arial, sans-serif
+	color: $blue12
+	transition: font $duration ease
+
+body
+	background: $blue0
+
+header
+	max-height: 100vh
+
+main
+	font-size: 1em
+	
+	@media (min-width: $size1)
+		font-size: 1.0625em
+
+	@media (min-width: $size2)
+		font-size: 1.125em
+
+ul  
+	list-style-type: none
+	margin: 0
+	padding: 0
+	overflow: hidden
+	border: 1px solid #e7e7e7
+	background-color: #f8f9f9
+	top: 0
+	position: fixed
+	width: 100%
+
+li 
+	float: right
+
+li a 
+	display: block
+	color: #666
+	text-align: center
+	padding: 15px 6px
+	text-decoration: none
+
+li a:hover:not(.active) 
+	background-color: #333
+
+li a.active 
+	background-color: #333
+
+rcorners1 
+	border-radius: 9px
+	background: #002255
+	padding: 5px
+	width: 200px
+	height: 30px 
+	color: white
+	text-align: center
+	display: inline-block
+	font-size: 26px
+	margin: 4px 4px
+
+rcorners2 
+	border-radius: 15px
+	background: #002255
+	padding: 5px
+	width: 200px
+	height: 30px 
+	color: white
+	text-align: center
+	display: inline-block
+	font-size: 26px
+	margin: 4px 4px
+
+	
+.icon-bar 
+	position: fixed
+	right: 0%
+	top: 40%
+	-webkit-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	transform: translateY(-50%)
+
+.icon-bar a 
+	display: block
+	text-align: center
+	padding: 16px
+	transition: all 0.3s ease
+	color: white
+	font-size: 20px
+	border-radius: 9px
+
+.icon-bar a:hover 
+	background-color: #e7e7e7
+	border-radius: 75px
+
+
+.facebook 
+	background: #3B5998
+	color: white
+
+.twitter 
+	background: #55ACEE
+	color: white
+
+.instagram 
+	background: #007cb5
+	color: white
+
+.content 
+	margin-left: 75px
+	font-size: 30px
+	
+	
+
+.header-wrapper
+	padding-top: 1px
+	position: relative
+	background: url('/assets/promotions/givingtuesday/cougsday2018-600.jpg') center center no-repeat
+	background-size: cover
+	height: 337px
+
+	h1, h2, h3
+		margin: 0
+		color: $blue3
+		position: absolute
+		width: 100%
+		font-size: 1em
+		font-weight: 600
+
+	h1
+		font-size: 1em
+		height: 115px
+		top: 0
+		background: url('/assets/promotions/givingtuesday/givingcougsday_h_940.png') center center no-repeat
+		background-size: contain
+		color: transparent
+		text-indent: 100%
+		white-space: nowrap
+		overflow: hidden
+		width: 94%
+		margin: 0 2%
+		transition: all $duration ease
+	h2
+		top: 5em
+	h3
+		top: 0.5em
+
+	.title-wrapper
+		position: absolute
+		transition: top $duration ease
+		width: 100%
+		top: 0
+		@media (min-width: $size2)
+			top: 3%
+
+	.button-wrapper
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 120px
+
+	@media (min-width: $size1)
+		h1
+			width: 80%
+			margin: 0 9%
+		.button-wrapper
+			font-size: 1.125em
+
+	@media (min-width: $size2)
+		h1
+			height: 132px
+			width: 70%
+			margin: 0 13%
+			top: 0.25em
+		h2, h3
+			font-size: 1.25em
+		.button-wrapper
+			font-size: 1.25em
+
+	@media (min-width: $size3)
+		h1
+			top: 1.5em
+		h2
+			top: 6.5em
+		h3
+			top: 1em
+
+	@media (min-width: 560px)
+		height: 0px
+		width: 100%
+		padding-bottom: 60%
+		.button-wrapper
+			position: absolute
+			bottom: 0
+			height: 0
+			padding-bottom: 21%
+
+	@media (min-width:600px), (min-width:300px) and (-webkit-min-device-pixel-ratio: 2), (min-width:300px) and (min-resolution: 192dpi)
+		background-image: url('/assets/promotions/givingtuesday/cougsday2017-1200.jpg')
+
+	@media (min-width:1200px), (min-width:600px) and (-webkit-min-device-pixel-ratio: 2), (min-width:600px) and (min-resolution: 192dpi)
+		background-image: url('/assets/promotions/givingtuesday/cougsday2017-2400.jpg')
+
+	@media (min-width:2400px), (min-width:1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width:1200px) and (min-resolution: 192dpi)
+		background-image: url('/assets/promotions/givingtuesday/cougsday2017-4800.jpg')		
+
+
+
+footer
+	font-size: 0.75em
+	background: $blue0
+	padding: 1em
+
+h2
+	font-weight: 300
+	font-size: 2em
+	color: $blue10
+	margin: 3.5em 0 0.5em
+
+p, ul
+	max-width: 42em
+	margin: 1em auto
+
+ul
+	list-style: none
+	padding: 0
+
+li
+	margin: 0
+
+strong
+	color: #fff
+
+
+.panel
+	padding: 7em 10% 8em
+	background: $blue3
+	transition: padding $duration ease
+	position: relative
+
+	@media (min-width: $size1)
+		padding: 7em 15% 8em
+
+	@media (min-width: $size2)
+		padding: 7em 20% 8em
+
+	&.challenge
+		background: $blue0
+		li
+			color: $blue11
+			strong
+				color: #fff
+
+	&.impact, &.toolkit
+		background: $blue1
+		padding-left: 10%
+		padding-right: 10%
+
+
+	&.impact
+		padding-bottom: 250px
+		z-index: 20
+		overflow: visible
+		&:after
+			content: " "
+			width: 100%
+			height: 460px
+			position: absolute
+			bottom: 0
+			left: 0
+			margin-bottom: -232px
+			background: transparent url('/assets/promotions/givingtuesday/cougsday2017-students.png') bottom center repeat-x
+		li
+			color: #fff
+			font-weight: 600
+			strong
+				color: #ffc
+				font-size: 2em
+				font-weight: 300
+				letter-spacing: -0.1em
+				position: relative
+				top: 0.15em
+				display: inline-block
+				margin-right: 0.15em
+
+	&.info
+		z-index: 10
+		padding-top: 250px
+
+	.first-heading
+		margin-top: 0
+
+
+a.donate, a.donate:link, a.donate:visited
+	display: inline-block
+	font-weight: 300
+	font-style: italic
+	text-decoration: none
+	padding: 0.35em 2em 0.4em
+	margin: 1em 0
+	background: #036
+	background: rgba(#001947, 0.75)
+	border: 1px solid #fff
+	color: #fff
+
+	&.large
+		font-size: 1.5em
+		border-width: 2px
+		padding: 0.3em 2em 0.45em
+		transition: padding $duration ease
+		white-space: nowrap
+
+		@media (min-width: $size1)
+			padding: 0.3em 3em 0.45em
+
+		@media (min-width: $size2)
+			padding: 0.3em 4em 0.45em
+
+.thermometer
+	padding: 1em
+	opacity: 0
+	transition: opacity 500ms ease
+	.show-bars &
+		opacity: 1
+
+.progress-bar
+	width: 100%
+	height: 1.5em
+	background: $blue5
+	position: relative
+
+.progress-bar-value
+	position: absolute
+	top: 0
+	left: 0
+	min-width: 1px
+	max-width: 100%
+	background: #fff
+
+	&:after
+		content: attr(data-current)
+		display: block
+		color: #fff
+		width: 6em
+		position: absolute
+		top: 1.75em
+		right: 0
+		text-align: center
+		margin-right: -3em
+		opacity: 0
+		transition: opacity 500ms ease
+
+	.donations &:after
+		content: '$' attr(data-current)
+
+	&.animation-start:after
+		opacity: 1
+
+	&.animation-finished
+		transition: none
+
+
+$progress-bar-bezier: 1.2s cubic-bezier(.7,0,.3,1)
+
+@media not all and (min-width: $size2)
+	.progress-bar-value
+		height: 100% !important
+		width: 1px
+		transition: width $progress-bar-bezier
+
+
+@media (min-width: $size2)
+	.thermometer
+		position: absolute
+		top: 0
+		height: 18em
+		width: 22%
+
+		&.donors
+			left: 0
+		&.donations
+			right: 0
+
+	.progress-bar
+		width: 1.5em
+		height: 100%
+		left: 50%
+		margin-left: -0.75em
+
+	.progress-bar-value
+		top: auto
+		bottom: 0
+		width: 100% !important
+		height: 1px
+		min-height: 1px
+		max-height: 100%
+		transition: height $progress-bar-bezier
+
+		&:after
+			top: 0
+			left: 2em
+			margin-right: 0
+			margin-top: -0.5em
+			text-align: left
+			font-weight: 600
+
+	#donations:after
+		left: auto
+		right: 2em
+		text-align: right
+
+
+
+.progress-bar span
+	display: block
+	position: absolute
+	width: 1px 
+	height: 1em
+	top: -0.75em
+	background: $blue12
+
+	&[data-position="0"]
+		left: 0
+	&[data-position="20"]
+		left: 20%
+	&[data-position="25"]
+		left: 25%
+	&[data-position="33"]
+		left: 33.33%
+	&[data-position="40"]
+		left: 40%
+	&[data-position="50"]
+		left: 50%
+	&[data-position="60"]
+		left: 60%
+	&[data-position="66"]
+		left: 66.66%
+	&[data-position="75"]
+		left: 75%
+	&[data-position="80"]
+		left: 80%
+	&[data-position="100"]
+		right: 0
+
+	&:after
+		content: attr(data-label)
+		color: $blue10
+		font-size: 0.75em
+		// font-weight: 600
+		position: absolute
+		display: block
+		top: -0.25em
+		left: 0.25em
+
+	@media (min-width: $size2)
+		height: 1px
+		width: 0.75em
+		top: auto
+
+		&[data-position="0"]
+			bottom: 0
+		&[data-position="20"]
+			bottom: 20%
+		&[data-position="25"]
+			bottom: 25%
+		&[data-position="33"]
+			bottom: 33.33%
+		&[data-position="40"]
+			bottom: 40%
+		&[data-position="50"]
+			bottom: 50%
+		&[data-position="60"]
+			bottom: 60%
+		&[data-position="66"]
+			bottom: 66.66%
+		&[data-position="75"]
+			bottom: 75%
+		&[data-position="80"]
+			bottom: 80%
+		&[data-position="100"]
+			top: 0
+
+		&:after
+			top: -0.6em
+			left: auto
+			right: 1.25em
+
+@media (min-width: $size2)
+	.progress-bar.progress-donors span
+		left: -0.5em
+
+	.progress-bar.progress-donations span
+		left: 1.25em
+
+		&:after
+			right: auto
+			left: 1.25em
+
+
+.complete
+	color: #71c8b2 !important
+	strong
+		color: mix( #71c8b2, #fff, 75% ) !important
+	&:after
+		color: #1bb289
+		content: "\00a0\2713"
+	&:before
+		content: "\2713\00a0"
+		color: transparent

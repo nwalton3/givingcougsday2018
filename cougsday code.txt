@@ -1,0 +1,161 @@
+Change the donate button style so its solid w/rounded corner (not transparent) and says "Give Back"
+push the text at the top of the page down and add the nav bar with two buttons
+Add social sharing icons to center of page, floating on the right margin
+
+
+
+
+
+<!--- Below is for buttons in top nav of page
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f8f9f9;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 15px 6px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #;
+}
+
+li a.active {
+    background-color: #;
+}
+
+#rcorners1 {
+    border-radius: 9px;
+    background: #002255;
+    padding: 5px; 
+    width: 200px;
+    height: 30px; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 4px;
+}
+
+#rcorners2 {
+    border-radius: 15px;
+    background: #002255;
+    padding: 5px; 
+    width: 200px;
+    height: 30px; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 4px;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+<li><a href="https://ldsp.org/assets/byu/resources/givingcougsday-toolkit-2017.pdf"><p id="rcorners2">TOOL KIT</p></a></li>
+<li><a href="https://ldsp-pay.ldschurch.org/donations/byu/campaigns/general.html?cde2=101188&cde1=101188&cid=Cougsday2018&"><p id="rcorners1">GIVE BACK</p></a></li>
+</ul>
+
+
+<div style="padding:50px;margin-top:40px;">
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+<!--- Below is for Social Sharing icons
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:2000px;}
+
+.icon-bar {
+  position: fixed;
+  right: 0%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 9px;
+}
+
+.icon-bar a:hover {
+  background-color: #e7e7e7;
+  border-radius: 75px;
+}
+
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #007cb5;
+  color: white;
+}
+
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="https://www.facebook.com/BYUAnnualGiving/" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.instagram.com/byuannualgiving/" class="instagram"><i class="fa fa-instagram"></i></a>
+ 
+</div>
+
+<div class="content">
+ 
+</div>
+
+</body>
+</html> 
+
