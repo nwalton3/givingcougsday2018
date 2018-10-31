@@ -1,12 +1,12 @@
-Change the donate button style so its solid w/rounded corner (not transparent) and says "Give Back"
-push the text at the top of the page down and add the nav bar with two buttons
-Add social sharing icons to center of page, floating on the right margin
+<!-- DONE: Change the donate button style so its solid w/rounded corner (not transparent) and says "Give Back" -->
+<!-- DONE: push the text at the top of the page down and add the nav bar with two buttons -->
+<!-- Add social sharing icons to center of page, floating on the right margin -->
 
 
 
 
 
-<!--- Below is for buttons in top nav of page
+<!--- Below is for buttons in top nav of page -->
 
 <!DOCTYPE html>
 <html>
