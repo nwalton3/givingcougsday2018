@@ -49,56 +49,56 @@ main
 	@media (min-width: $size2)
 		font-size: 1.125em
 
-ul  
-	list-style-type: none
-	margin: 0
-	padding: 0
-	overflow: hidden
-	border: 1px solid #e7e7e7
-	background-color: #f8f9f9
-	top: 0
-	position: fixed
-	width: 100%
+// ul  
+// 	list-style-type: none
+// 	margin: 0
+// 	padding: 0
+// 	overflow: hidden
+// 	border: 1px solid #e7e7e7
+// 	background-color: #f8f9f9
+// 	top: 0
+// 	position: fixed
+// 	width: 100%
 
-li 
-	float: right
+// li 
+// 	float: right
 
-li a 
-	display: block
-	color: #666
-	text-align: center
-	padding: 15px 6px
-	text-decoration: none
+// li a 
+// 	display: block
+// 	color: #666
+// 	text-align: center
+// 	padding: 15px 6px
+// 	text-decoration: none
 
-li a:hover:not(.active) 
-	background-color: #333
+// li a:hover:not(.active) 
+// 	background-color: #333
 
-li a.active 
-	background-color: #333
+// li a.active 
+// 	background-color: #333
 
-rcorners1 
-	border-radius: 9px
-	background: #002255
-	padding: 5px
-	width: 200px
-	height: 30px 
-	color: white
-	text-align: center
-	display: inline-block
-	font-size: 26px
-	margin: 4px 4px
+// .rcorners1 
+// 	border-radius: 9px
+// 	background: #002255
+// 	padding: 5px
+// 	width: 200px
+// 	height: 30px 
+// 	color: white
+// 	text-align: center
+// 	display: inline-block
+// 	font-size: 26px
+// 	margin: 4px 4px
 
-rcorners2 
-	border-radius: 15px
-	background: #002255
-	padding: 5px
-	width: 200px
-	height: 30px 
-	color: white
-	text-align: center
-	display: inline-block
-	font-size: 26px
-	margin: 4px 4px
+// .rcorners2 
+// 	border-radius: 15px
+// 	background: #002255
+// 	padding: 5px
+// 	width: 200px
+// 	height: 30px 
+// 	color: white
+// 	text-align: center
+// 	display: inline-block
+// 	font-size: 26px
+// 	margin: 4px 4px
 
 	
 .icon-bar 
@@ -328,9 +328,9 @@ a.donate, a.donate:link, a.donate:visited
 	padding: 0.35em 2em 0.4em
 	margin: 1em 0
 	background: #036
-	background: rgba(#001947, 0.75)
 	border: 1px solid #fff
 	color: #fff
+	border-radius: 1em
 
 	&.large
 		font-size: 1.5em
@@ -536,3 +536,43 @@ $progress-bar-bezier: 1.2s cubic-bezier(.7,0,.3,1)
 	&:before
 		content: "\2713\00a0"
 		color: transparent
+
+
+
+
+
+// Top buttons
+
+header
+	margin-top: 4em
+
+nav.top-nav
+	z-index: 100
+	display: flex
+	flex-direction: row-reverse
+	background: #000a2e
+	border-bottom: 1px solid #036
+	top: 0
+	position: fixed
+	width: 100%
+
+
+	a 
+		display: block
+		color: #666
+		text-align: center
+		padding: 6px 2em 7px
+		text-decoration: none
+		border: 1px solid white
+
+		border-radius: 1em
+		background: #025
+		color: white
+		font-size: 26px
+		margin: 0.25em
+
+		&:first-child
+			margin-right: 1em
+
+
+

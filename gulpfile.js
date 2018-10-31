@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const livereload = require('gulp-livereload');
+const connect = require('gulp-connect');
 const rename = require("gulp-rename");
 
 
@@ -15,17 +15,23 @@ const rename = require("gulp-rename");
 gulp.task('sass', function () {
     return gulp.src( 'cougsday2018.sass' )
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./'))
         .pipe(rename('cougsday2018.min.css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('./'))
+        .pipe(connect.reload());
 });
 
 
 gulp.task('sass:watch', function () {
-    livereload.listen();
     gulp.watch( 'cougsday2018.sass', ['sass']);
 });
 
+
+gulp.task('connect', function() {
+  connect.server({
+    root: './',
+    livereload: true
+  });
+});
 
 
 
@@ -33,5 +39,5 @@ gulp.task('sass:watch', function () {
  * Startup
  * =========================== */
 
-gulp.task('default', [ 'sass', 'sass:watch' ]);
+gulp.task('default', [ 'connect', 'sass', 'sass:watch' ]);
 
